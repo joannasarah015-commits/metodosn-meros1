@@ -1,0 +1,165 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMgi7U2QcTvT9pY7nINpNJz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/joannasarah015-commits/metodosn-meros1/blob/main/epsilon9sep\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "J8NlGZPzNfpX"
+      },
+      "outputs": [],
+      "source": [
+        "import numpy as np"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=np.sqrt(9)"
+      ],
+      "metadata": {
+        "id": "rs1DMw0qN7Nr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "09qfzujoN_EO",
+        "outputId": "636bc588-88e1-44b5-eb63-3cf02c8cb06e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "np.float64(3.0)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x*x"
+      ],
+      "metadata": {
+        "id": "ss92MSotOGE7",
+        "outputId": "f76a25b4-3c87-479a-cbc6-2f4c8e84eb91",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "np.float64(9.0)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "epsilon = 1.0\n",
+        "uno = 1.0\n",
+        "\n",
+        "while epsilon + uno > uno:\n",
+        "    epsilon /= 2\n",
+        "\n",
+        "print(\"epsilon de la maquina: \", epsilon)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yH06q-coO_Ov",
+        "outputId": "4cbd7161-e921-4891-d756-50e900826b21"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "epsilon de la maquina:  1.1102230246251565e-16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "eps = 1.0\n",
+        "while (1.0 + eps) != 1.0:\n",
+        "    eps /= 2.0\n",
+        "print(\"Epsilon de la maquina: \", eps)\n",
+        "\n",
+        "x = 1.0\n",
+        "y = eps\n",
+        "suma = x + y\n",
+        "print(\"suma de x y y: \", suma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aigcguwDP9yW",
+        "outputId": "2ec03eca-6c71-43fa-832c-4068608aadbc"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Epsilon de la maquina:  1.1102230246251565e-16\n",
+            "suma de x y y:  1.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
